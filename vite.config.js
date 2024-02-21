@@ -4,6 +4,7 @@ import dsv from '@rollup/plugin-dsv'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/mww_vsr_farbenlehre/',
   plugins: [react(), dsv()],
   server: {
     host: '172.17.8.144',
