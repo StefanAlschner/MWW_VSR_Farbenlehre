@@ -98,7 +98,7 @@ const MainPage = () => {
 
   useEffect(() => {
     console.log("first");
-    d3.csv("public/data/farbenlehre.csv").then((data) => {
+    d3.csv("./public/data/farbenlehre.csv").then((data) => {
       setGraph(transformToGraph(data));
       setData(data);
     });
