@@ -102,9 +102,9 @@ const MainPage = () => {
     // .then((res) => {console.log(res); setGraph(transformToGraph(res.data));
     //   setData(res.data)} )
     // .catch(err=>console.log(err))
-    d3.csv("./data/farbenlehre.csv").then((error, data) => { if (error){throw error} else {
+    d3.csv("./data/farbenlehre.csv").then((data) => {
       setGraph(transformToGraph(data));
-      setData(data);}
+      setData(data);
     });
   }, []);
 
