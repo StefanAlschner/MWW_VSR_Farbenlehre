@@ -3,6 +3,7 @@ import * as d3 from "d3";
 import "./MainPage.css";
 import CardComponent from "./CardComponent";
 import GraphContainer from "./GraphContainer";
+// import axios from "axios";
 
 const transformToGraph = (data) => {
   const nodesObj = {};
@@ -97,10 +98,13 @@ const MainPage = () => {
   const [graph, setGraph] = useState({nodes:[], links:[]})
 
   useEffect(() => {
-    console.log("first");
-    d3.csv("./public/data/farbenlehre.csv").then((data) => {
+    // axios.get("./data/farbenlehre.csv")
+    // .then((res) => {console.log(res); setGraph(transformToGraph(res.data));
+    //   setData(res.data)} )
+    // .catch(err=>console.log(err))
+    d3.csv("./data/farbenlehre.csv").then((error, data) => { if (error){throw error} else {
       setGraph(transformToGraph(data));
-      setData(data);
+      setData(data);}
     });
   }, []);
 
