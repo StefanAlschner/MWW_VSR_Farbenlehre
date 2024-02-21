@@ -1,0 +1,113 @@
+.search-result-card {
+  /* background-color: #ffffff; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: center; /* Vertically center the items */
+  cursor: pointer;
+
+  /* Adjust width, height, and other styles as needed */
+}
+.search-result-card-grid-view {
+  /* background-color: #ffffff; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Use flexbox to arrange items horizontally */
+  cursor: pointer;
+  flex-direction: column;
+
+  /* Adjust width, height, and other styles as needed */
+}
+
+.web-card {
+  color: black;
+  @media (prefers-color-scheme: dark) {
+    /* background-color: #383232; */
+    color: rgb(255, 255, 255);
+  }
+}
+
+.thumbnail {
+  width: 100px; /* Adjust the width of the thumbnail */
+  height: 100px;
+  margin-right: 10px; /* Add spacing between thumbnail and content */
+  min-width: 100px; /* Ensure a minimum width of 100px */
+}
+.thumbnail-grid {
+  width: auto; /* Adjust the width of the thumbnail */
+  height: auto;
+
+  /* min-width: 100px; Ensure a minimum width of 100px */
+}
+
+.thumbnail img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of the container */
+  max-height: 100%; /* Ensure the image doesn't exceed the height of the container */
+  width: auto; /* Allow the image to adjust its width based on its aspect ratio */
+  height: auto; /* Allow the image to adjust its height based on its aspect ratio */
+}
+
+.thumbnail-grid img {
+  max-width: 100%; /* Ensure the image doesn't exceed the width of the container */
+  max-height: 100%; /* Ensure the image doesn't exceed the height of the container */
+  width: auto; /* Allow the image to adjust its width based on its aspect ratio */
+  height: auto; /* Allow the image to adjust its height based on its aspect ratio */
+}
+
+.content {
+  flex-grow: 1; /* Expand to fill available space */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  text-align: left;
+}
+.content-grid {
+  flex-grow: 1; /* Expand to fill available space */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  text-align: left;
+  margin: 5px;
+}
+
+.top-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Add spacing between rows */
+}
+
+.icon {
+  width: 15px; /* Adjust the width of the icon */
+  margin-right: 5px; /* Add spacing between icon and institution name */
+}
+
+.icon img {
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.institution {
+  font-size: 14px; /* Adjust font size as needed */
+  /* Add any other styles for the institution name */
+}
+
+.middle-row {
+  margin-bottom: 5px; /* Add spacing between rows */
+}
+
+.title {
+  text-decoration: underline; /* Add underscore style */
+  font-weight: bold; /* Apply bold style */
+  /* Add any other styles for the title */
+}
+
+.bottom-row {
+  font-size: 14px; /* Adjust font size as needed */
+  /* Add any other styles for additional information */
+}
+
+.contributor-info {
+  display: flex;
+}

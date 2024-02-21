@@ -1,0 +1,15 @@
+.maincontainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.catalogue {
+  flex-basis: 50%;
+  margin-left: 15px;
+}
+
+.graph {
+  flex-basis: 50%;
+}
